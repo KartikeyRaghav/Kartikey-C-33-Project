@@ -8,14 +8,5 @@ class Bird extends BaseClass {
 
   display() {
     super.display();
-
-    if(this.body.position.x > 300) {
-      var pos = [this.body.position.x,this.body.position.y];
-      this.projectile.push(pos);
-      
-      for(var i = 0; i < this.projectile.length; i++) {
-        image(this.pImage,this.projectile[i][0],this.projectile[i][1]);
-      }
-    }
   }
 }
