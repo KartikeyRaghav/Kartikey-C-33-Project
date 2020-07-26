@@ -16,7 +16,6 @@ class SlingShot{
     attach(body){
         this.sling.bodyA = body;
         gameState = "onSling";
-        bird.projectile = [];
     }
     
     fly(){
